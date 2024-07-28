@@ -1,14 +1,23 @@
 import React from "react";
+import styles from "./Header.module.css";
 
 function Header() {
   return (
-    <div id="header">
-      <a href="#">Logo</a>
-      <div id="current-item">
-        <p>Current Item</p>
+    <div className={styles.header}>
+      <div className={styles.leftSide}>
+        <a href="#">Logo</a>
+        <div id="current-item">
+          <p>Current-Item</p>
+        </div>
       </div>
-      <div className="battery">
-        <p>battery</p>
+
+      <div className={styles.rightSide}>
+        <div className="battery">
+          <p>battery</p>
+        </div>
+        <div>
+          <p>DD MM YY</p>
+        </div>
       </div>
     </div>
   );
