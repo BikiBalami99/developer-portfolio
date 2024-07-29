@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className={styles.header}>
       <div className={styles.leftSide}>
-        <a href="#">Logo</a>
+        <a href="#">Biki Balami</a>
         <div id="current-item">
           <p>Current-Item</p>
         </div>

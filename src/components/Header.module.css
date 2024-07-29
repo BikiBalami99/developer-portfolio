@@ -1,13 +1,22 @@
 .header {
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.45);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 3vh;
+  color: rgb(255, 255, 255);
+  padding: 0 20px;
+  font-size: 14px;
+
+  justify-items: center;
 }
 
 .leftSide {
   display: flex;
+  gap: 1rem;
 }
 
 .rightSide {
   display: flex;
+  gap: 1rem;
 }

@@ -2,4 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* font-weight: 100-900; */
+  /* font-style: normal, italic  */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  background: linear-gradient(
+    138deg,
+    rgba(244, 244, 244, 1) 0%,
+    rgba(184, 184, 184, 1) 100%
+  );
+  background-image: url("../public/assets/background/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
