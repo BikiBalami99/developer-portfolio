@@ -1,0 +1,16 @@
+.main {
+  height: 90vh;
+  width: 100vw;
+  justify-content: space-between;
+  display: flex;
+}
+
+.folders {
+  border: 1px solid black;
+  width: 200px;
+}
+
+.window {
+  border: 1px solid red;
+  width: 100%;
+}
