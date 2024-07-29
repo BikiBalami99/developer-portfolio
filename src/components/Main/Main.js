@@ -1,30 +1,35 @@
 import React, { useState } from "react";
 
 import styles from "./Main.module.css";
-import Projects from "./Projects";
-import AboutMe from "./AboutMe";
-import ContactMe from "./ContactMe";
+import Projects from "./Windows/Projects";
+import AboutMe from "./Windows/AboutMe";
+import ContactMe from "./Windows/ContactMe";
 import Folder from "./Folder";
-import Window from "./Window";
+import Window from "./Windows/Window";
 
 function Main() {
   const [onDisplay, setOnDisplay] = useState(<></>);
 
+  // Following function handles which window to show.
   function handleSelect(selectedItem) {
     switch (selectedItem) {
       case "Projects":
-        setOnDisplay(<Projects />);
+        setOnDisplay(<Projects closeHandler={handleClose} />);
         break;
       case "About me":
-        setOnDisplay(<AboutMe />);
+        setOnDisplay(<AboutMe closeHandler={handleClose} />);
         break;
       case "Contact me":
-        setOnDisplay(<ContactMe />);
+        setOnDisplay(<ContactMe closeHandler={handleClose} />);
         break;
       default:
         setOnDisplay(<></>);
         break;
     }
+  }
+
+  function handleClose() {
+    setOnDisplay(<></>);
   }
 
   return (
@@ -36,7 +41,7 @@ function Main() {
       </div>
 
       {/* Windows */}
-      <Window onDisplay={onDisplay} />
+      <Window onDisplay={onDisplay} closeHandler={handleClose} />
     </div>
   );
 }

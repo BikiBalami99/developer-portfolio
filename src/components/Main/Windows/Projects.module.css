@@ -1,0 +1,48 @@
+.projects {
+  border: 1px solid white;
+
+  height: 80vh;
+  width: auto;
+  margin: 30px;
+  background-color: rgba(0, 0, 0, 0.831);
+}
+/* Top Bar */
+.topBar {
+  height: 4%;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topBarWindowControlButtons {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid white;
+  width: 10%;
+}
+
+.topBarTitle {
+  border: 1px solid white;
+}
+
+.topBarSearch {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  width: 10%;
+  border: 1px solid white;
+}
+
+/* Body */
+.body {
+  height: 96%;
+
+  display: grid;
+  grid: repeat(4, 300px) / repeat(4, 300px);
+  grid-auto-rows: 300px;
+  grid-auto-columns: 300px;
+  grid-auto-flow: row;
+}
+
+.file {
+  border: solid 1px white;
+}
