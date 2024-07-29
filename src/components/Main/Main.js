@@ -4,24 +4,25 @@ import styles from "./Main.module.css";
 import Projects from "./Projects";
 import AboutMe from "./AboutMe";
 import ContactMe from "./ContactMe";
+import Folder from "./Folder";
+import Window from "./Window";
 
 function Main() {
-  const [display, setDisplay] = useState(<></>);
+  const [onDisplay, setOnDisplay] = useState(<></>);
 
   function handleSelect(selectedItem) {
-    console.log(selectedItem);
     switch (selectedItem) {
       case "Projects":
-        setDisplay(<Projects />);
+        setOnDisplay(<Projects />);
         break;
       case "About me":
-        setDisplay(<AboutMe />);
+        setOnDisplay(<AboutMe />);
         break;
       case "Contact me":
-        setDisplay(<ContactMe />);
+        setOnDisplay(<ContactMe />);
         break;
       default:
-        setDisplay(<></>);
+        setOnDisplay(<></>);
         break;
     }
   }
@@ -29,11 +30,13 @@ function Main() {
   return (
     <div className={styles.main}>
       <div className={styles.folders}>
-        <div onClick={() => handleSelect("Projects")}>Projects</div>
-        <div onClick={() => handleSelect("About me")}>About me</div>
-        <div onClick={() => handleSelect("Contact me")}>Contact me</div>
+        <Folder title="Projects" selectHandler={handleSelect} />
+        <Folder title="About me" selectHandler={handleSelect} />
+        <Folder title="Contact me" selectHandler={handleSelect} />
       </div>
-      <div className={styles.window}>{display}</div>
+
+      {/* Windows */}
+      <Window onDisplay={onDisplay} />
     </div>
   );
 }
