@@ -14,10 +14,10 @@ a {
 body {
   background: linear-gradient(
     138deg,
-    rgba(244, 244, 244, 1) 0%,
-    rgba(184, 184, 184, 1) 100%
+    rgb(61, 170, 21) 0%,
+    rgb(229, 255, 228) 100%
   );
-  background-image: url("../public/assets/background/background.jpeg");
+  /* background-image: url("../public/assets/background/background.jpeg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

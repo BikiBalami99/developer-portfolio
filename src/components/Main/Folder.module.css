@@ -1,6 +1,15 @@
+.eachFolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .folderIcon {
   height: 100px;
   width: 100px;
-  background-color: #7dcefb;
+  background-image: url("../../../public/assets/icons/files-icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   cursor: pointer;
 }
