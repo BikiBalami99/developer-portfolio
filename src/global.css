@@ -21,3 +21,13 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
+:root {
+  --primary-gradient: linear-gradient(180deg, #021526 0%, #000c17 100%);
+  --secondary-gradient: linear-gradient(
+    180deg,
+    rgba(6, 100, 212, 0.1) 0%,
+    rgba(2, 81, 174, 0.1) 100%
+  );
+  --primary-text: #e2e2b6;
+}

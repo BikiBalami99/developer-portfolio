@@ -1,0 +1,25 @@
+.eachFolder {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  cursor: pointer;
+
+  color: var(--primary-text);
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(6, 100, 212, 0.1) 0%,
+    rgba(2, 81, 174, 0.1) 100%
+  );
+}
+
+.folderIcon {
+  height: 20px;
+  width: 20px;
+  background-image: url("/public/assets/icons/files-icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

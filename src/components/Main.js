@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 import styles from "./Main.module.css";
-import Projects from "./Main/Windows/Projects";
-import AboutMe from "./Main/Windows/AboutMe";
-import ContactMe from "./Main/Windows/ContactMe";
-import Folder from "./Main/Folder";
+import Projects from "./EachWindows/Projects";
+import AboutMe from "./EachWindows/AboutMe";
+import ContactMe from "./EachWindows/ContactMe";
+import Folder from "./Folder";
 
 function Main() {
   const [onDisplay, setOnDisplay] = useState(<></>);
@@ -33,14 +33,14 @@ function Main() {
 
   return (
     <div className={styles.main}>
-      <div className={styles.folders}>
+      <div className={styles.sidebar}>
         <Folder title="Projects" selectHandler={handleSelect} />
         <Folder title="About me" selectHandler={handleSelect} />
         <Folder title="Contact me" selectHandler={handleSelect} />
       </div>
 
       {/* Windows */}
-      {onDisplay}
+      <div className="window">{onDisplay}</div>
     </div>
   );
 }
