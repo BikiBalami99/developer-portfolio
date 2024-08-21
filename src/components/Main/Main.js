@@ -5,7 +5,6 @@ import Projects from "./Windows/Projects";
 import AboutMe from "./Windows/AboutMe";
 import ContactMe from "./Windows/ContactMe";
 import Folder from "./Folder";
-import Window from "./Windows/Window";
 
 function Main() {
   const [onDisplay, setOnDisplay] = useState(<></>);
@@ -41,7 +40,7 @@ function Main() {
       </div>
 
       {/* Windows */}
-      <Window onDisplay={onDisplay} closeHandler={handleClose} />
+      {onDisplay}
     </div>
   );
 }
