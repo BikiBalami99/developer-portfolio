@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  /* font-weight: 100-900; */
-  /* font-style: normal, italic  */
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "ELGR" 1, "ELSH" 2; */
 }
 
 a {
@@ -12,13 +14,10 @@ a {
   color: inherit;
 }
 body {
-  background: linear-gradient(
-    138deg,
-    rgb(61, 170, 21) 0%,
-    rgb(229, 255, 228) 100%
-  );
-  /* background-image: url("../public/assets/background/background.jpeg"); */
+  background: linear-gradient(180deg, #021526 0%, #000c17 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100%;
+  overflow: hidden;
 }

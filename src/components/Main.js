@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 import styles from "./Main.module.css";
-import Projects from "./Windows/Projects";
-import AboutMe from "./Windows/AboutMe";
-import ContactMe from "./Windows/ContactMe";
-import Folder from "./Folder";
+import Projects from "./Main/Windows/Projects";
+import AboutMe from "./Main/Windows/AboutMe";
+import ContactMe from "./Main/Windows/ContactMe";
+import Folder from "./Main/Folder";
 
 function Main() {
   const [onDisplay, setOnDisplay] = useState(<></>);

@@ -3,17 +3,38 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 3vh;
-  color: rgb(255, 255, 255);
-  padding: 0 20px;
-  font-size: 14px;
 
-  justify-items: center;
+  padding: 4px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(226, 226, 182, 0.1);
+  background: linear-gradient(
+    180deg,
+    rgba(6, 100, 212, 0.1) 0%,
+    rgba(2, 81, 174, 0.1) 100%
+  );
 }
 
 .leftSide {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  color: #e2e2b6;
+  font-family: Handjet;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.currentItem,
+.time,
+.date {
+  color: #e2e2b6;
+  font-family: Handjet;
+  font-size: 1rem;
+  font-weight: 200;
 }
 
 .rightSide {
